@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Flag</title>
+    <style>
+        .flag {
+            width: 300px;
+            height: 200px;
+            display: flex;
+            position: relative;
+            border: 1px solid #000; /* Optional: for visibility */
+        }
+
+        .white-stripe {
+            width: 75px; /* 1/4 of the flag width */
+            height: 100%;
+            background-color: #ffffff;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .green-field {
+            width: 225px; /* 3/4 of the flag width */
+            height: 100%;
+            background-color: #01411c;
+            position: relative;
+            margin-left: 75px; /* Offset by white stripe width */
+        }
+
+        .crescent {
+            width: 95px; /* Size for proportion */
+            height: 95px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -45%) rotate(-80deg); /* Tilted slightly */
+        }
+
+        .white-circle {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .green-circle {
+            width: 75px; /* Smaller to create crescent shape */
+            height: 75px;
+            background-color: #01411c;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px; /* Adjusted for crescent shape */
+            left: 20px; /* Adjusted for crescent shape */
+        }
+
+        .star {
+            position: absolute;
+            left: 55.56%; /* Approx 125px of 225px, positions inside crescent */
+            top: 47.5%;   /* Approx 95px of 200px, slightly above center */
+            transform: translate(-50%, -50%) rotate(35deg); /* Centered and tilted */
+            font-size: 30px; /* Smaller to fit without touching */
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="white-stripe"></div>
+        <div class="green-field">
+            <div class="crescent">
+                <div class="white-circle"></div>
+                <div class="green-circle"></div>
+            </div>
+            <div class="star">★</div>
+        </div>
+    </div>
+</body>
+</html>
