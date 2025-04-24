@@ -1,0 +1,131 @@
+body {
+  text-align: center;
+  background-color: #1e1e2f;
+  font-family: "Poppins", sans-serif;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.8rem; /* Slightly larger for emphasis */
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Bold for a modern look */
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
+  letter-spacing: 3px; /* Wider spacing for elegance */
+  margin-bottom: 25px;
+}
+
+footer {
+  color: #a9a9a9; /* Slightly darker for better contrast */
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem; /* Slightly larger for readability */
+  font-weight: 400;
+  margin-top: 25px;
+  letter-spacing: 1.5px; /* Adds a modern touch */
+}
+
+.w,
+.a,
+.s,
+.d,
+.j,
+.k,
+.l {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem; /* Modern and readable size */
+  font-weight: 600; /* Semi-bold for clarity */
+  color: #ffffff; /* White text for contrast */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  text-align: center;
+  line-height: 120px; /* Centers text vertically */
+}
+
+.w:hover,
+.a:hover,
+.s:hover,
+.d:hover,
+.j:hover,
+.k:hover,
+.l:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.w {
+  background-image: url("./images/tom1.png"); /* Ensure the path is correct */
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+.set {
+  margin: 5% auto;
+}
+
+.game-over {
+  background-color: #ff4d4d;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.pressed {
+  transform: scale(0.9); /* Shrinks the button slightly */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+  opacity: 0.8; /* Slightly reduces opacity */
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.red {
+  color: #ff4d4d;
+}
+
+.drum {
+  outline: none;
+  border: 5px solid #404b69;
+  font-size: 1.4rem; /* Slightly smaller for balance */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* Modern weight */
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  border-radius: 15px;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  margin: 15px;
+  background: linear-gradient(145deg, #2a2a40, #1c1c2b);
+  box-shadow: 5px 5px 10px #161625, -5px -5px 10px #2e2e44;
+  transition: all 0.3s ease;
+}
+
+.drum:active {
+  background: linear-gradient(145deg, #1c1c2b, #2a2a40);
+  box-shadow: inset 5px 5px 10px #161625, inset -5px -5px 10px #2e2e44;
+}
